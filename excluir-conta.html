@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Excluir conta — A2VERSO</title>
+<style>
+  :root {
+    --fundo: #FAF6F2;
+    --texto: #1F104C;
+    --texto-suave: #4A3B6B;
+    --destaque: #492C6F;
+    --erro: #E7000B;
+    --borda: #E7DFF3;
+    --card: #FFFFFF;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--fundo);
+    color: var(--texto);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 32px 20px 64px; }
+  header { text-align: center; margin-bottom: 32px; }
+  .selo {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #E06A7C, #492C6F);
+    margin-bottom: 12px;
+  }
+  h1 { font-size: 24px; margin: 0 0 4px; }
+  .subtitulo { color: var(--texto-suave); font-size: 14px; margin: 0; }
+  h2 { font-size: 17px; margin: 32px 0 8px; color: var(--destaque); }
+  p, li { font-size: 15px; color: var(--texto); }
+  ul { padding-left: 20px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--borda);
+    border-radius: 16px;
+    padding: 20px 20px 4px;
+    margin-top: 16px;
+  }
+  .passo {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    margin-bottom: 16px;
+  }
+  .numero {
+    flex: none;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--destaque);
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .botao {
+    display: inline-block;
+    background: var(--erro);
+    color: #fff !important;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 999px;
+    font-weight: 600;
+    margin-top: 8px;
+  }
+  a { color: var(--destaque); }
+  footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--borda);
+    font-size: 13px;
+    color: var(--texto-suave);
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="selo"></div>
+    <h1>Como excluir sua conta</h1>
+    <p class="subtitulo">A2VERSO — a exclusão é permanente e não pode ser desfeita</p>
+  </header>
+
+  <div class="card">
+    <h2>Opção 1 — direto pelo app (mais rápido)</h2>
+    <div class="passo"><div class="numero">1</div><p>Abra o A2VERSO e entre na sua conta.</p></div>
+    <div class="passo"><div class="numero">2</div><p>Toque em <strong>Configurações</strong> (ícone de engrenagem).</p></div>
+    <div class="passo"><div class="numero">3</div><p>Em <strong>Privacidade e LGPD</strong>, toque em <strong>Excluir conta</strong>.</p></div>
+    <div class="passo"><div class="numero">4</div><p>Leia o que será apagado, confirme sua senha e digite <strong>EXCLUIR</strong> para liberar o botão.</p></div>
+  </div>
+
+  <div class="card">
+    <h2>Opção 2 — sem o app, por e-mail</h2>
+    <p>
+      Se você não tem mais acesso ao app, mande um e-mail pedindo a
+      exclusão, do mesmo endereço cadastrado na conta, para:
+    </p>
+    <a class="botao" href="mailto:dev.app.hq@gmail.com?subject=Excluir%20minha%20conta%20A2VERSO">
+      dev.app.hq@gmail.com
+    </a>
+    <p style="margin-top:16px">
+      Pra confirmarmos que é você, o pedido precisa vir do mesmo e-mail
+      cadastrado no app. Respondemos e concluímos a exclusão em até
+      alguns dias úteis.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>O que é apagado</h2>
+    <ul>
+      <li>Seu perfil, foto e dados de login</li>
+      <li>Seu histórico de humores e dos rituais de 5 minutos</li>
+      <li>Suas conversas com o Aconselhador (IA)</li>
+      <li>A memória que a IA tinha do casal</li>
+      <li>Suas mensagens no chat privado com seu par</li>
+      <li>Seus áudios do aconselhador</li>
+    </ul>
+
+    <h2>O que fica para o seu par</h2>
+    <ul>
+      <li>Memórias, desejos e pontos do Matrimilhas criados juntos — seu nome passa a aparecer como "Ex-parceiro(a)"</li>
+      <li>O saldo de pontos do casal não muda</li>
+      <li>Se seu par continuar no app, vocês são desvinculados e ele(a) pode parear com outra pessoa quando quiser</li>
+    </ul>
+  </div>
+
+  <footer>
+    A2VERSO · <a href="termos.html">Termos de Uso</a> ·
+    <a href="privacidade.html">Política de Privacidade</a>
+  </footer>
+</div>
+</body>
+</html>
